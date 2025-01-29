@@ -3,15 +3,14 @@ import { Building2, Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16">
+    <footer className="bg-primary text-gray-200 py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Building2 className="h-8 w-8 text-blue-600" />
               <span className="text-2xl font-bold text-white">Constru4</span>
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-200">
               Transformando sonhos em realidade através da construção civil.
             </p>
           </div>
@@ -35,13 +34,13 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-bold text-lg mb-4">Redes Sociais</h4>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-200 hover:text-white transition">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-200 hover:text-white transition">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              <a href="#" className="text-gray-200 hover:text-white transition">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>

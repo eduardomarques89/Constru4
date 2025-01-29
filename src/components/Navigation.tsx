@@ -4,19 +4,17 @@ import { Building2 } from 'lucide-react';
 export const Navigation = () => {
   return (
     <nav className="relative z-10">
-      <div className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            {/* <Building2 className="h-8 w-8 text-blue-600" /> */}
-            <span className="text-2xl font-bold text-white">Logo</span>
+      <div className="container mx-auto px-6 py-6">
+        <div className="flex items-center justify-around">
+          <div className="flex space-x-2">
+            <span className="text-2xl font-bold text-white">Constru4</span>
           </div>
-          <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-white hover:text-secondary font-medium">Sobre</a>
-            <a href="#projects" className="text-white hover:text-secondary font-medium">Projetos</a>
-            <a href="#partners" className="text-white hover:text-secondary font-medium">Parceiros</a>
-            <a href="#contact" className="text-white hover:text-secondary font-medium">Contato</a>
+          <div className="hidden md:flex space-x-6 font-normal">
+            <a href="#about" className="text-white hover:text-secondary">Sobre</a>
+            <a href="#projects" className="text-white hover:text-secondary">Projetos</a>
+            <a href="#partners" className="text-white hover:text-secondary">Parceiros</a>
           </div>
-          <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-1 rounded-md hover:bg-secondary transition font-medium">
+          <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
             Fale Conosco
           </button>
         </div>

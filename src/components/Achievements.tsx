@@ -26,7 +26,7 @@ const achievements = [
 
 export const Achievements = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-14 md:py-36 bg-primary">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {achievements.map((achievement, index) => (
@@ -34,8 +34,8 @@ export const Achievements = () => {
               <div className="flex justify-center mb-4">
                 {achievement.icon}
               </div>
-              <h3 className="text-3xl font-bold text-primary mb-2">{achievement.number}</h3>
-              <p className="text-gray-600">{achievement.text}</p>
+              <h3 className="text-3xl font-bold text-white mb-2">{achievement.number}</h3>
+              <p className="text-white">{achievement.text}</p>
             </div>
           ))}
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -24,6 +25,16 @@ const projects = [
   },
   {
     id: 3,
+    title: "Condomínio Parque das Flores",
+    status: "Lançamento",
+    description: "Casas em condomínio fechado com área verde",
+    location: "Campinas - SP",
+    price: "A partir de R$ 350.000",
+    image:
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80",
+  },
+  {
+    id: 4,
     title: "Condomínio Parque das Flores",
     status: "Lançamento",
     description: "Casas em condomínio fechado com área verde",
@@ -93,12 +104,15 @@ export const Projects = () => {
                   <span className="text-sm">{project.location}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-secondary font-medium">
+                  <span className="text-primary font-medium">
                     {project.price}
                   </span>
-                  <button className="text-primary flex items-center hover:text-blue-800">
+                  <Link 
+                    to={`/projeto/${project.id}`}
+                    className="text-primary flex items-center"
+                  >
                     Saiba mais <ChevronRight className="ml-1 h-4 w-4" />
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

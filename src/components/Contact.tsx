@@ -1,15 +1,25 @@
-import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin } from 'lucide-react';
+import React from "react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-20">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6 md:px-14 lg:px-2 xl:px-24">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Entre em Contato</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              Entre em Contato
+            </h2>
             <p className="text-gray-600 mb-8 text-lg">
-              Estamos prontos para atender você e realizar seu sonho da casa própria.
+              Estamos prontos para atender você e realizar seu sonho da casa
+              própria.
             </p>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
@@ -36,67 +46,24 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900">Endereço</h3>
-                  <span className="text-gray-600">Av. Paulista, 1000 - São Paulo, SP</span>
+                  <span className="text-gray-600">
+                    Av. Paulista, 1000 - São Paulo, SP
+                  </span>
                 </div>
-              </div>
-              <div className="flex space-x-4 pt-4">
-                <a href="#" className="bg-blue-100 p-3 rounded-full hover:bg-blue-200 transition">
-                  <Facebook className="h-6 w-6 text-blue-600" />
-                </a>
-                <a href="#" className="bg-blue-100 p-3 rounded-full hover:bg-blue-200 transition">
-                  <Instagram className="h-6 w-6 text-blue-600" />
-                </a>
-                <a href="#" className="bg-blue-100 p-3 rounded-full hover:bg-blue-200 transition">
-                  <Linkedin className="h-6 w-6 text-blue-600" />
-                </a>
               </div>
             </div>
           </div>
-          <form className="bg-white p-8 rounded-lg shadow-lg">
-            <div className="grid grid-cols-2 gap-6 mb-6">
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">Nome</label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-              </div>
-              <div>
-                <label className="block text-gray-700 font-medium mb-2">E-mail</label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                />
-              </div>
+          <div className="bg-gray-200 rounded-lg overflow-hidden">
+            {/* Placeholder for Google Maps */}
+            <div className="h-96 bg-gray-300">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d275.28132905833917!2d-46.89414805844381!3d-21.829386676077206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c82be566194a51%3A0xf078698ed1a35d79!2sR.%20Dr.%20Moacir%20Troncoso%20P%C3%A9res%2C%20Vargem%20Grande%20do%20Sul%20-%20SP%2C%2013880-000!5e0!3m2!1spt-BR!2sbr!4v1737998680575!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="450"
+                loading="lazy"
+              ></iframe>
             </div>
-            <div className="mb-6">
-              <label className="block text-gray-700 font-medium mb-2">Telefone</label>
-              <input
-                type="tel"
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-gray-700 font-medium mb-2">Interesse</label>
-              <select className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
-                <option value="">Selecione o tipo de imóvel</option>
-                <option value="apartamento">Apartamento</option>
-                <option value="casa">Casa</option>
-                <option value="comercial">Comercial</option>
-                <option value="terreno">Terreno</option>
-              </select>
-            </div>
-            <div className="mb-6">
-              <label className="block text-gray-700 font-medium mb-2">Mensagem</label>
-              <textarea
-                rows={4}
-                className="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
-              ></textarea>
-            </div>
-            <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-medium">
-              Enviar Mensagem
-            </button>
-          </form>
+          </div>
         </div>
       </div>
     </section>
