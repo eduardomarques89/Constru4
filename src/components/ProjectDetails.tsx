@@ -62,7 +62,7 @@ const projects = [
     },
   },
   {
-    id: 4,
+    id: 3,
     title: "Condomínio Parque das Flores",
     status: "Lançamento",
     description: "Casas em condomínio fechado com área verde",
@@ -170,7 +170,7 @@ const ProjectDetails = () => {
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
                 {project.title}
               </h1>
-              <button className="w-[200px] md:w-2/4 lg:h-1/2 lg:w-[200px] flex space-x-1 items-center justify-center bg-red-100 py-2 rounded-md bg-[#1faf54] hover:bg-[#137c3a] transition text-white">
+              <button className="w-[200px] md:w-2/4 lg:h-1/2 lg:w-[200px] flex space-x-1 items-center justify-center py-2 rounded-md bg-[#1faf54] hover:bg-[#137c3a] transition text-white">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
                   alt="WhatsApp"
