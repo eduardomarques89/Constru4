@@ -113,22 +113,28 @@ const ProjectDetails = () => {
   return (
     <div className="bg-gray-200 min-h-screen">
       <nav className="relative z-10 bg-primary">
-      <div className="container mx-auto px-6 py-6">
-        <div className="flex items-center justify-around">
-          <div className="flex space-x-2">
-            <span className="text-2xl font-bold text-white">Logo</span>
+        <div className="container mx-auto px-6 py-6">
+          <div className="flex items-center justify-around">
+            <div className="flex space-x-2">
+              <span className="text-2xl font-bold text-white">Logo</span>
+            </div>
+            <div className="hidden md:flex space-x-6 font-normal">
+              <a href="/#about" className="text-white">
+                Sobre
+              </a>
+              <a href="/#projects" className="text-white">
+                Projetos
+              </a>
+              <a href="/#partners" className="text-white">
+                Parceiros
+              </a>
+            </div>
+            <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
+              Fale Conosco
+            </button>
           </div>
-          <div className="hidden md:flex space-x-6 font-normal">
-            <a href="/#about" className="text-white">Sobre</a>
-            <a href="/#projects" className="text-white">Projetos</a>
-            <a href="/#partners" className="text-white">Parceiros</a>
-          </div>
-          <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
-            Fale Conosco
-          </button>
         </div>
-      </div>
-    </nav>
+      </nav>
       <div className="container mx-auto px-4 md:px-12 lg:px-56 py-12">
         <a
           href="/#projects"
@@ -160,9 +166,25 @@ const ProjectDetails = () => {
           </div>
 
           <div className="p-8">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              {project.title}
-            </h1>
+            <div className="flex flex-col lg:flex-row lg:justify-between mb-8">
+              <h1 className="text-4xl font-bold text-gray-900 mb-6">
+                {project.title}
+              </h1>
+              <button className="w-[200px] md:w-2/4 lg:h-1/2 lg:w-[200px] flex space-x-1 items-center justify-center bg-red-100 py-2 rounded-md bg-[#1faf54] hover:bg-[#137c3a] transition text-white">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                  alt="WhatsApp"
+                  className="w-[20px] h-[20px]"
+                />
+                <a
+                  href="https://wa.me/5519988811404"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Falar com atendente
+                </a>
+              </button>
+            </div>
 
             <div className="flex items-center text-gray-600 mb-6">
               <MapPin className="h-5 w-5 mr-2" />
@@ -217,7 +239,7 @@ const ProjectDetails = () => {
             </div>
 
             <div className="mt-8 pt-8 border-t border-gray-200">
-              <div className="flex justify-center items-center">
+              <div className="flex flex-col justify-center items-center space-y-8">
                 <span className="text-xl md:text-2xl font-bold text-primary">
                   {project.price}
                 </span>

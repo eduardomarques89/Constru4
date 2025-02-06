@@ -61,7 +61,7 @@ export const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition cursor-pointer group"
+              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition group"
             >
               <div className="relative h-64 overflow-hidden">
                 <img
@@ -109,7 +109,7 @@ export const Projects = () => {
                   </span>
                   <Link 
                     to={`/projeto/${project.id}`}
-                    className="text-primary flex items-center"
+                    className="text-primary flex items-center cursor-pointer"
                   >
                     Saiba mais <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
