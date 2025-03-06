@@ -20,7 +20,7 @@ const projects = [
     area: "49m² a 53m² (A depender suíte)",
     features: ["Garagem privativa", "Excelente Localização", "Elevador", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
+      "https://w7startup.com.br/nzc-pinheiros.jpeg",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const projects = [
     area: "49m²",
     features: ["Garagem coberta", "Excelente Localização", "Gás individual", "Portaria automática"],
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
+      "https://w7startup.com.br/nzc-cachoeiras.png",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const projects = [
     area: "49m² a 53m² (A depender suíte)",
     features: ["Garagem coberta", "Excelente Localização", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80",
+      "https://w7startup.com.br/nzc-areias.png",
   }
 ];
 
