@@ -5,7 +5,7 @@ import '../whatsappbutton.css';
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5519988811404"
+      href="https://wa.me/5519999665452"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsapp-button animate-bounce"

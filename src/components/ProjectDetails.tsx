@@ -135,7 +135,7 @@ const ProjectDetails = () => {
                   className="w-[20px] h-[20px]"
                 />
                 <a
-                  href="https://wa.me/5519988811404"
+                  href="https://wa.me/5519999665452"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

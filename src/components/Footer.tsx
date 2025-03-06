@@ -48,7 +48,7 @@ export const Footer = () => {
         </div>
         <div className="text-center pt-8 border-t border-gray-800">
           <p className="text-sm">
-            © 2024 Constru4. Todos os direitos reservados.
+            © 2025 Constru4. Todos os direitos reservados.
           </p>
         </div>
       </div>
