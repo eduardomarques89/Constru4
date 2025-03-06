@@ -26,7 +26,7 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col space-y-6 space-x-0 md:flex-row md:space-x-4 mt-12 md:space-y-0">
             <button className="bg-blue-600 text-white px-4 py-4 w-48 md:w-auto rounded-md text-md hover:bg-blue-700 transition flex items-center justify-center font-medium">
-              Nossos Projetos
+              <a href="#projects">Nossos Projetos</a>
             </button>
             <a href='#about' className="bg-white text-gray-800 px-8 py-4 w-64 md:w-auto rounded-md text-md transition flex items-center justify-center font-medium">
               Sobre nós <ArrowDown className="ml-4 h-5 w-5" />

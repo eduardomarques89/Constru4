@@ -5,31 +5,31 @@ import { Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
-    title: "Residencial Vista Verde",
-    status: "Em Construção",
-    description: "Apartamentos de 2 e 3 dormitórios com lazer completo",
-    location: "São Paulo - SP",
-    price: "A partir de R$ 250.000",
+    title: "Residencial Pinheiros",
+    status: "Concluído",
+    description: "Situado no coração de São Pedro, o Residencial Pinheiros oferece uma localização privilegiada, próximo à Igreja Matriz, ao Parque Municipal e com fácil acesso a restaurantes e supermercados.",
+    location: "São Pedro",
+    features: ["Garagem privativa", "Excelente Localização", "Elevador", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
   },
   {
     id: 2,
-    title: "Comercial Business Tower",
+    title: "Residencial Caminho das Cachoeiras",
     status: "Concluído",
-    description: "Salas comerciais e lajes corporativas no centro",
-    location: "São Paulo - SP",
-    price: "A partir de R$ 450.000",
+    description: "Próximo ao Parque dos Saltos, o Residencial Caminho das Cachoeiras oferece uma localização privilegiada, com fácil acesso ao centro da cidade e aos principais atrativos turísticos de Brotas, unindo conveniência e contato com a natureza.",
+    location: "Brotas",
+    features: ["Garagem coberta", "Excelente Localização", "Gás individual", "Portaria automática"],
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
   },
   {
     id: 3,
-    title: "Condomínio Parque das Flores",
-    status: "Lançamento",
-    description: "Casas em condomínio fechado com área verde",
-    location: "Campinas - SP",
-    price: "A partir de R$ 350.000",
+    title: "Residencial Areias",
+    status: "Concluído",
+    description: "Com localização privilegiada no centro de Descalvado, o Residencial Areias está cercado por comodidades essenciais, como comércios, escolas, restaurantes e supermercados, garantindo praticidade e conveniência para o seu dia a dia.",
+    location: "Descalvado",
+    features: ["Garagem coberta", "Excelente Localização", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80",
   }
@@ -94,9 +94,6 @@ export const Projects = () => {
                   <span className="text-sm">{project.location}</span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-primary font-medium">
-                    {project.price}
-                  </span>
                   <Link 
                     to={`/projeto/${project.id}`}
                     className="text-primary flex items-center cursor-pointer"

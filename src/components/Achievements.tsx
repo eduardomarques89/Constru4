@@ -3,24 +3,19 @@ import { Trophy, Home, Users2, MapPin } from 'lucide-react';
 
 const achievements = [
   {
-    number: "15+",
+    number: "10+",
     text: "Anos de experiência",
     icon: <Trophy className="h-8 w-8 text-secondary" />,
   },
   {
-    number: "500+",
+    number: "10+",
     text: "Projetos entregues",
     icon: <Home className="h-8 w-8 text-secondary" />,
   },
   {
-    number: "10.000+",
+    number: "100+",
     text: "Clientes satisfeitos",
     icon: <Users2 className="h-8 w-8 text-secondary" />,
-  },
-  {
-    number: "50+",
-    text: "Cidades atendidas",
-    icon: <MapPin className="h-8 w-8 text-secondary" />,
   },
 ];
 
@@ -28,7 +23,7 @@ export const Achievements = () => {
   return (
     <section className="py-14 md:py-36 bg-primary">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
           {achievements.map((achievement, index) => (
             <div key={index} className="text-center">
               <div className="flex justify-center mb-4">

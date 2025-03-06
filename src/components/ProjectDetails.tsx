@@ -13,79 +13,37 @@ import { Navigation } from "./Navigation";
 const projects = [
   {
     id: 1,
-    title: "Residencial Vista Verde",
-    status: "Em Construção",
-    description: "Apartamentos de 2 e 3 dormitórios com lazer completo",
-    location: "São Paulo - SP",
-    price: "A partir de R$ 250.000",
+    title: "Residencial Pinheiros",
+    status: "Concluído",
+    description: "Situado no coração de São Pedro, o Residencial Pinheiros oferece uma localização privilegiada, próximo à Igreja Matriz, ao Parque Municipal e com fácil acesso a restaurantes e supermercados.",
+    location: "São Pedro",
+    area: "49m² a 53m² (A depender suíte)",
+    features: ["Garagem privativa", "Excelente Localização", "Elevador", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80",
-    fullDescription: `O Residencial Vista Verde é um empreendimento moderno que oferece o melhor em conforto e qualidade de vida. Com apartamentos de 2 e 3 dormitórios, o projeto foi pensado para atender famílias que buscam praticidade e bem-estar.`,
-    features: [
-      "Área de lazer completa",
-      "Piscina adulto e infantil",
-      "Academia equipada",
-      "Salão de festas",
-      "Playground",
-      "Churrasqueira",
-    ],
-    details: {
-      area: "65-85m²",
-      units: "120 unidades",
-      floors: "15 andares",
-      delivery: "Dezembro 2024",
-    },
   },
   {
     id: 2,
-    title: "Comercial Business Tower",
+    title: "Residencial Caminho das Cachoeiras",
     status: "Concluído",
-    description: "Salas comerciais e lajes corporativas no centro",
-    location: "São Paulo - SP",
-    price: "A partir de R$ 450.000",
+    description: "Próximo ao Parque dos Saltos, o Residencial Caminho das Cachoeiras oferece uma localização privilegiada, com fácil acesso ao centro da cidade e aos principais atrativos turísticos de Brotas, unindo conveniência e contato com a natureza.",
+    location: "Brotas",
+    area: "49m²",
+    features: ["Garagem coberta", "Excelente Localização", "Gás individual", "Portaria automática"],
     image:
       "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80",
-    fullDescription: `O Comercial Business Tower é um empreendimento corporativo de alto padrão localizado no coração financeiro da cidade. Com infraestrutura moderna e localização privilegiada, é a escolha ideal para empresas que buscam prestígio e praticidade.`,
-    features: [
-      "Lobby com pé direito duplo",
-      "Sistema de segurança 24h",
-      "Estacionamento rotativo",
-      "Heliporto",
-      "Auditório",
-      "Salas de reunião compartilhadas",
-    ],
-    details: {
-      area: "35-400m²",
-      units: "200 unidades",
-      floors: "25 andares",
-      delivery: "Pronto para ocupação",
-    },
   },
   {
     id: 3,
-    title: "Condomínio Parque das Flores",
-    status: "Lançamento",
-    description: "Casas em condomínio fechado com área verde",
-    location: "Campinas - SP",
-    price: "A partir de R$ 350.000",
+    title: "Residencial Areias",
+    status: "Concluído",
+    description: "Com localização privilegiada no centro de Descalvado, o Residencial Areias está cercado por comodidades essenciais, como comércios, escolas, restaurantes e supermercados, garantindo praticidade e conveniência para o seu dia a dia.",
+    location: "Descalvado",
+    area: "49m² a 53m² (A depender suíte)",
+    features: ["Garagem coberta", "Excelente Localização", "Playground", "Portaria automática", "Gás individual", "Área de churrasco", "Revestimento em porcelanato"],
     image:
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&q=80",
-    fullDescription: `O Condomínio Parque das Flores é um projeto residencial que une natureza e modernidade. Com casas espaçosas e ampla área verde, o empreendimento oferece qualidade de vida e segurança para sua família.`,
-    features: [
-      "Área verde preservada",
-      "Segurança 24h",
-      "Clube com piscina",
-      "Quadra poliesportiva",
-      "Pista de caminhada",
-      "Playground",
-    ],
-    details: {
-      area: "150-200m²",
-      units: "80 casas",
-      floors: "2 pavimentos",
-      delivery: "Junho 2025",
-    },
-  },
+  }
 ];
 
 const ProjectDetails = () => {
@@ -116,7 +74,7 @@ const ProjectDetails = () => {
         <div className="container mx-auto px-6 py-6">
           <div className="flex items-center justify-around">
             <div className="flex space-x-2">
-              <span className="text-2xl font-bold text-white">Logo</span>
+              <span className="text-2xl font-bold text-white">Constru4</span>
             </div>
             <div className="hidden md:flex space-x-6 font-normal">
               <a href="/#about" className="text-white">
@@ -141,7 +99,7 @@ const ProjectDetails = () => {
           className="inline-flex items-center text-primary hover:text-blue-800 mb-8"
         >
           <ArrowLeft className="h-5 w-5 mr-2" />
-          Voltar para todos os projetos
+          Voltar para a página inicial
         </a>
 
         <div className="bg-white rounded-md shadow-xl overflow-hidden">
@@ -196,21 +154,7 @@ const ProjectDetails = () => {
                 <Building2 className="h-5 w-5 text-primary mr-3" />
                 <div>
                   <p className="text-sm text-gray-500">Área</p>
-                  <p className="font-medium">{project.details.area}</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <Users className="h-5 w-5 text-primary mr-3" />
-                <div>
-                  <p className="text-sm text-gray-500">Unidades</p>
-                  <p className="font-medium">{project.details.units}</p>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <Calendar className="h-5 w-5 text-primary mr-3" />
-                <div>
-                  <p className="text-sm text-gray-500">Entrega</p>
-                  <p className="font-medium">{project.details.delivery}</p>
+                  <p className="font-medium">{project.area}</p>
                 </div>
               </div>
             </div>
@@ -220,7 +164,7 @@ const ProjectDetails = () => {
                 Sobre o empreendimento
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                {project.fullDescription}
+                {project.description}
               </p>
             </div>
 
@@ -235,14 +179,6 @@ const ProjectDetails = () => {
                     <span className="text-gray-600">{feature}</span>
                   </div>
                 ))}
-              </div>
-            </div>
-
-            <div className="mt-8 pt-8 border-t border-gray-200">
-              <div className="flex flex-col justify-center items-center space-y-8">
-                <span className="text-xl md:text-2xl font-bold text-primary">
-                  {project.price}
-                </span>
               </div>
             </div>
           </div>

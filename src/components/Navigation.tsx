@@ -15,7 +15,7 @@ export const Navigation = () => {
             <a href="#partners" className="text-white hover:text-secondary">Parceiros</a>
           </div>
           <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
-            Fale Conosco
+            <a href="https://api.whatsapp.com/send/?phone=5519988811404&text&type=phone_number&app_absent=0" target='_blank'>Entre em Contato</a>
           </button>
         </div>
       </div>
