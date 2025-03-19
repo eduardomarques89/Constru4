@@ -8,7 +8,7 @@ const testimonials = [
     role: "Proprietário",
     image:
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80",
-    text: "Realizar o sonho da casa própria com a NZC foi uma experiência incrível. A qualidade da construção e o atendimento superaram todas as expectativas.",
+    text: "Realizar o sonho da casa própria com a Constru4 foi uma experiência incrível. A qualidade da construção e o atendimento superaram todas as expectativas.",
   },
   {
     name: "Maria Santos",
@@ -22,7 +22,7 @@ const testimonials = [
     role: "Proprietário",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80",
-    text: "A NZC transformou meu sonho em realidade. Apartamento entregue no prazo e com acabamento impecável.",
+    text: "A Constru4 transformou meu sonho em realidade. Apartamento entregue no prazo e com acabamento impecável.",
   },
 ];
 

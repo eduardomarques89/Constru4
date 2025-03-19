@@ -21,7 +21,7 @@ function App() {
               <About />
               <Projects />
               <Achievements />
-              <Partners />
+              {/* <Partners /> */}
               <Contact />
               <Footer />
               <WhatsAppButton />

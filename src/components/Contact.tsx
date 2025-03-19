@@ -18,7 +18,7 @@ export const Contact = () => {
               Estamos prontos para atender você e realizar seu sonho da casa
               própria.
             </p>
-            <div className="space-y-6">
+            <div className="space-y-6 text-sm md:text-base">
               <div className="flex items-center space-x-4">
                 <div className="bg-blue-100 p-3 rounded-full">
                   <Phone className="h-6 w-6 text-blue-600" />

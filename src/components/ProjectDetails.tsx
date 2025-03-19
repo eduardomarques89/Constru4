@@ -8,7 +8,7 @@ import {
   Building2,
   Users,
 } from "lucide-react";
-import { Navigation } from "./Navigation";
+import { Footer } from "./Footer";
 
 const projects = [
   {
@@ -69,12 +69,14 @@ const ProjectDetails = () => {
   }
 
   return (
-    <div className="bg-gray-200 min-h-screen">
+    <div className="bg-white min-h-screen">
       <nav className="relative z-10 bg-primary">
         <div className="container mx-auto px-6 py-6">
           <div className="flex items-center justify-around">
             <div className="flex space-x-2">
-              <span className="text-2xl font-bold text-white">Constru4</span>
+            <div>
+              <img src="/logo.png" alt="" className='w-32' />
+            </div>
             </div>
             <div className="hidden md:flex space-x-6 font-normal">
               <a href="/#about" className="text-white">
@@ -82,9 +84,6 @@ const ProjectDetails = () => {
               </a>
               <a href="/#projects" className="text-white">
                 Projetos
-              </a>
-              <a href="/#partners" className="text-white">
-                Parceiros
               </a>
             </div>
             <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
@@ -102,7 +101,7 @@ const ProjectDetails = () => {
           Voltar para a página inicial
         </a>
 
-        <div className="bg-white rounded-md shadow-xl overflow-hidden">
+        <div className="bg-white rounded-md  overflow-hidden">
           <div className="relative h-96">
             <img
               src={project.image}
@@ -184,7 +183,8 @@ const ProjectDetails = () => {
           </div>
         </div>
       </div>
-    </div>
+      <Footer />
+    </div>    
   );
 };
 
