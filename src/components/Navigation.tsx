@@ -8,7 +8,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-around">
           <div className="flex space-x-2">
             <div>
-              <img src="/logo.png" alt="" className='w-32' />
+              <img src="https://w7startup.com.br/logo-constru4.png" alt="" className='w-32' />
             </div>
           </div>
           <div className="hidden md:flex space-x-6 font-semibold">

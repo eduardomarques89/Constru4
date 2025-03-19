@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
             <div>
-              <img src="/logo.png" alt="" className='w-32' />
+              <img src="https://w7startup.com.br/logo-constru4.png" alt="" className='w-32' />
             </div>
             </div>
             <p className="text-gray-200">
