@@ -1,6 +1,3 @@
-import React from 'react';
-import { Building2 } from 'lucide-react';
-
 export const Navigation = () => {
   return (
     <nav className="relative z-10">
@@ -12,8 +9,8 @@ export const Navigation = () => {
             </div>
           </div>
           <div className="hidden md:flex space-x-6 font-semibold">
-            <a href="#about" className="text-white hover:text-secondary">Sobre</a>
-            <a href="#projects" className="text-white hover:text-secondary">Projetos</a>
+            <a href="#about" className="text-white text-lg hover:text-secondary drop-shadow-2xl">Sobre</a>
+            <a href="#projects" className="text-white text-lg hover:text-secondary drop-shadow-2xl">Projetos</a>
             {/* <a href="#partners" className="text-white hover:text-secondary">Parceiros</a> */}
           </div>
           <button className="hidden md:block bg-white text-sm md:text-base text-black px-4 py-2 rounded-md hover:bg-secondary hover:text-white transition font-medium">
